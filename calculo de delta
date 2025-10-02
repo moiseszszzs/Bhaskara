@@ -1,0 +1,19 @@
+a = float(input("enter the value of a"))
+b = float(input("enter the value of b"))
+c = float(input("enter the value of c"))
+
+if a == 0:
+    print("O valor de 'a' não pode ser zero para uma equação do segundo grau.")
+else:
+    delta = (b**2) - (4 * a * c)
+
+    print(f"Para a = {a}, b = {b} e c = {c}:")
+    print(f"O Discriminante (Delta) é: {delta}")
+    print("-" * 30)
+
+    if delta > 0:
+        print("Delta é maior que zero, portanto, existem duas raízes reais e distintas.")
+    elif delta == 0:
+        print("Delta é igual a zero, portanto, existe uma raiz real (ou duas raízes iguais).")
+    else:
+        print("Delta é menor que zero, portanto, não existem raízes reais (apenas complexas).")
